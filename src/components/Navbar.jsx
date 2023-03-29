@@ -8,7 +8,7 @@ import { logo, menu, close } from "../assets";
 const Navbar = () => {
   const [active, setActive] = useState('')
   return (
-    <nav className={`${styles.paddindX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
+    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
       <div className="w-full flex jutify-between items-center max-w-7x1 mx-auto">
         <Link to="/"
           className="flex items-center gap-2"
@@ -28,7 +28,7 @@ const Navbar = () => {
               className={`${
               active === link.title ? "text-white" : "text-secondary"
             }
-              hover:text-white text-[18px] font-medium cursor-pointer
+              hover:text-white text-[18px] font-medium cursor-pointer 
             ` } onClick={() => setActive(link.title)}
               >
           <a href={`#${link.id}`}>{link.title}</a>
